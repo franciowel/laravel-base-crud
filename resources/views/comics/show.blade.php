@@ -1,10 +1,22 @@
 @extends('layouts.app')
 
 @section('main_content')
-    <h3>[titolo]</h3>
 
-    <p>Genere: [type]</p>
+    <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
 
-    <p>Prezzo: [price]</p>
+    <h3>{{ $comic->title }}</h3>
+
+    <p>Genere: {{ $comic->type }}</p>
+
+    <p>Prezzo: {{ $comic->price }}</p>
+
+    @if ($comic->description)
+        <div>
+            Descrizione:
+            <p>
+                {{ $comic->description }}
+            </p>
+        </div>
+    @endif
     
 @endsection
