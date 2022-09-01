@@ -9,5 +9,8 @@
         <div>
             {{$comic->title}} - {{$comic->price}}
         </div>
+        <div>
+            <a href="{{ route('comics.show', ['comic' => $comic->id]) }}">Show More</a>
+        </div>
     @endforeach
 @endsection
