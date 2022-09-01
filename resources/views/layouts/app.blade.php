@@ -19,6 +19,10 @@
                 <a href="{{route('comics.index')}}">Comics</a>
             </li>
 
+            <li>
+                <a href="{{route('comics.create')}}">Aggiungi</a>
+            </li>
+
         </ul>
     </header>
 
